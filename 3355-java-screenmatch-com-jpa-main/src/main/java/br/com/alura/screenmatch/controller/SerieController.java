@@ -30,7 +30,7 @@ public class SerieController {
     }
 
 
-    @GetMapping("http://127.0.0.1:5500/detalhes.html?id={id}")
+    @GetMapping("/{id}")
     public SerieDTO obterPorId(@PathVariable Long id) {
         return service.obterPorId(id);
     }

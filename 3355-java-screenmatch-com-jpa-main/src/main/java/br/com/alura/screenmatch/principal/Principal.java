@@ -16,7 +16,7 @@ public class Principal {
     private final ConsumoApi consumo = new ConsumoApi();
     private final ConverteDados conversor = new ConverteDados();
     private final String ENDERECO = "https://www.omdbapi.com/?t=";
-    private final String API_KEY = "&apikey=6585022c";
+    private final String API_KEY = System.getenv("OMDB_APIKEY");
     private SerieRepository serieRepository;
     private List<Serie> listaDeSeries = new ArrayList<>();
     private Optional<Serie> serieBuscada;
